@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Orlando Magic Social Center</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <img src="img/logo.png" alt="Main Logo" style="width:10%;">
+        <h2 class="logo">Orlando Magic Social Center</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="video/orlando.mp4" id="myVideo" muted loop autoplay></video>
+      
+      <div class="overlay"></div>
+      
+      <div class="text">
+        <h2>Make Sure You Never Miss Out on a Magic Moment</h2>
+      </div>
+      <ul class="social">
+        <li><a href="#" class="fab fa-facebook"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+        <li><a href="#" class="fab fa-youtube"></a></li>
+        <li><a href="#" class="fab fa-tiktok"></a></li>
+      </ul>
+      <div class="pauseBtn">
+        <button id="pauseBtn" onclick="pauseFunction()" class="fas fa-pause"></button>
+      </div>
+    </section>
+    <div class="menu">
+        <ul>
+          <li><a href="#"><button class="menuBtnTop" onclick="document.getElementById('subscribe').style.display='block'">Subscribe to Us!</button></a></li>
+          <li><a href="#"><button class="menuBtnMiddle" onclick="document.getElementById('connect').style.display='block'">Connect With Us!</button></a></li>
+          <li><a href="#"><button class="menuBtnMiddle" onclick="document.getElementById('team').style.display='block'">Meet the Team!</button></a></li>
+          <li><a href="#"><button class="menuBtnBottom" onclick="document.getElementById('amway').style.display='block'">Experience the Amway!</button></a></li>
+          <li class="app">
+            <h3>Download our App!</h3>
+            <ol>
+              <i class="fab fa-apple"></i>
+              <i class="fab fa-google-play"></i>
+              <i class="fab fa-app-store"></i>
+            </ol>
+          </li>
+        </ul>
+    </div>
+    <div class="mainContent">
+      <!--Subscribe-->
+      <div id="subscribe" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('subscribe').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+            <h1 class="w3-xlarge">Subscribe to the Magic!</h1>
+          </div>
+          <div class="w3-container subscribeContent" style="background:#111;">
+            <div class="subContent">
+              <h2>Be the <b>First</b> to know!</h2>
+              <h3>Orlando Magic email subscribers are the first to receive: </h3>
+              <ul class="list">
+                <li>Ticket Access</li>
+                <li>Exclusive Discounts</li>
+                <li>Magic News</li>
+                <li>Partner Offers</li>
+                <li>Sweepstakes</li>
+                <li>And Much More!</li>
+              </ul>
+            <button class="w3-button">Sign Me Up!</button>
+            </div>
+            <img src='img/tross.webp' alt="Terrence Ross" class="subImg" style="width:30%">
+          </div>
+        </div>
+        
+      </div>
+      <!--Connect-->
+      <div id="connect" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('connect').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+            <h1 class="w3-xlarge connectHeader">Join the True Blue Nation!</h1>
+          </div>
+          <div class="w3-container connectContent" style="background: url(img/b5.jpg); background-size:cover; background-position:center;">
+            <div class="connectFeed">
+              <div class="taggbox-container" style="width:100%;height:10%;overflow: hidden;">
+                <div class="taggbox-socialwall" data-wall-id="70871" view-url="https://widget.taggbox.com/70871"></div>
+                <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
+              </div>
+            </div>
+            <div class="connectText">
+              <h3 class="w3-xlarge">The Offical Orlando Magic Fan Community</h3>
+              <p>From swapping the latest Orlando Magic stories on message boards to uploading photos of all the action courtside, here’s your chance to be a part of legendary moments every step of the way.</p>
+              <button class="w3-button connectButton">Join the Conversation!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Team-->
+      <div id="team" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
+          <div class="w3-container w3-black w3-display-container">
+            <span onclick="document.getElementById('team').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+            <h1 class="w3-xlarge">Meet the Team!</h1>
+          </div>
+          <div class="w3-container">
+            <div class="teamContainer">
+              <div class="topRow">
+                <div class="card">
+                  <img src="img/players/acole.png" alt="Cole Anthony" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Cole Anthony</b></h4>
+                    <h5>No. 50</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/mbamba.jpeg" alt="Mo Bamba" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Mo Bamba</b></h4>
+                    <h5>No. 5</h5>
+                    <p>Center</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/wcjr.png" alt="Wendell Carter" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Wendell Carter</b></h4>
+                    <h5>No. 34</h5>
+                    <p>Center</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/mcw.png" alt="Michael Carter-Williams" style="width: 100%;">
+                  <div class="container">
+                    <h4><b>Michael Carter-Williams</b></h4>
+                    <h5>No. 7</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/jdowtin.png" alt="Jeff Dowtin" style="width:100%">
+                  <div class="container">
+                    <h4><b>Jeff Dowtin</b></h4>
+                    <h5>No. 11</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rowTwo">
+                <div class="card">
+                  <img src="img/players/mfultz.png" alt="Markelle Fultz" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Markelle Fultz</b></h4>
+                    <h5>No. 20</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/hgravett.jpg" alt="Hassani Gravett" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Hassani Gravett</b></h4>
+                    <h5>No. 12</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/rjhampton.png" alt="RJ Hampton" style="width:100%;">
+                  <div class="container">
+                    <h4><b>R.J. Hampton</b></h4>
+                    <h5>No. 13</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/gharris.png" alt="Gary Harris" style="width: 100%;">
+                  <div class="container">
+                    <h4><b>Gary Harris</b></h4>
+                    <h5>No. 14</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/jisaac.png" alt="Jonathan Isaac" style="width:100%">
+                  <div class="container">
+                    <h4><b>Jonathan Isaac</b></h4>
+                    <h5>No. 1</h5>
+                    <p>Forward</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rowThree">
+                <div class="card">
+                  <img src="img/players/rlopez.png" alt="Robin Lopez" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Robin Lopez</b></h4>
+                    <h5>No. 33</h5>
+                    <p>Center</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/emoore.png" alt="E'Twaun Moore" style="width:100%;">
+                  <div class="container">
+                    <h4><b>E'Twaun Moore</b></h4>
+                    <h5>No. 55</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/cokeke.png" alt="Chuma Okeke" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Chuma Okeke</b></h4>
+                    <h5>No. 3</h5>
+                    <p>Forward</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/tross.png" alt="Terrence Ross" style="width: 100%;">
+                  <div class="container">
+                    <h4><b>Terrence Ross</b></h4>
+                    <h5>No. 31</h5>
+                    <p>Forward-Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/jsnuggs.png" alt="Jalen Snuggs" style="width:100%">
+                  <div class="container">
+                    <h4><b>Jalen Snuggs</b></h4>
+                    <h5>No. 4</h5>
+                    <p>Guard</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottomRow">
+                <div class="card">
+                  <img src="img/players/jteske.png" alt="Jon Teske" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Jon Teske</b></h4>
+                    <h5>No. 15</h5>
+                    <p>Center</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/fwagner.png" alt="Franz Wagner" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Franz Wagner</b></h4>
+                    <h5>No. 22</h5>
+                    <p>Forward</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/players/mwagner.png" alt="Chuma Okeke" style="width:100%;">
+                  <div class="container">
+                    <h4><b>Moritz Wagner</b></h4>
+                    <h5>No. 21</h5>
+                    <p>Center-Forward</p>
+                    <div class="socialIcons">
+                      <a href="#" class="fab fa-facebook"></a>
+                      <a href="#" class="fab fa-twitter"></a>
+                      <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Amway-->
+      <div id="amway" class="w3-modal">
+         <div class="w3-modal-content w3-animate-zoom">
+           <div class="w3-container w3-black w3-display-container">
+             <span onclick="document.getElementById('amway').style.display='none'" class="w3-button w3-display-topright w3-large">X</span>
+             <h1 class="w3-large">Expereince the Amway Center!</h1>
+           </div>
+           <div class="w3-container amwayContainer" style="background:url(img/b2.jpg); background-size: cover;background-position: center;">
+             <div class="amwayContent">
+              <h3>Come celebrate with 18,500 of your closest friends!</h3>
+              <p>Complete with state of the art technology, 1100+ High-Definition monitors, the Amway offers an experience that you'll never forget. Located in the heart of downtown Orlando, Florida, the Amway keeps the entertainment alive in this already fun-packed city. </p>
+              <p>We offer 18,500 seats in one of our many levels, 1,400 club seats, 68 Large Boxes and 60 private Suites, for any type of viewing and experience you prefer. </p>
+              </div>
+              <div class="amwayBtnContainer">
+                <button class="amwayBtn">Find Out More Here!</button>
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+      
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+      
+      var video = document.getElementById("myVideo");
+      var btn = document.getElementById("pauseBtn");
+      
+      function pauseFunction() {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      }
+      
+    </script>
+  </body>
+</html>
